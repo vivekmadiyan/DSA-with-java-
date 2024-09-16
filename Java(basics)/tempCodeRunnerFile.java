@@ -1,1 +1,1 @@
- // System.out.println(isArmstrong(n));
+int[][] arr =new int[3][3];
