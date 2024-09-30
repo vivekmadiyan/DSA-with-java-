@@ -9,7 +9,7 @@ public class Findinfinite {
     static int ans(int[] arr,int target){
       int first=0;
       int last=1;
-      while(target>arr[last]){
+      while(target>arr[end]){
         int newFirst=last+1;
         //end=previous end+ sizeofbox*2
         last=last+(last-first+1)*2;
