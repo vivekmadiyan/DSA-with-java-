@@ -32,7 +32,7 @@ public class Main {
         for(int rows=1;rows<=n;rows++){
             //for every row run col
             for(int cols=1;cols<=n-rows+1;cols++){
-            System.out.print("* ");
+            System.out.print("*");
             }
             //when one row is printed we need to add a newline
         
