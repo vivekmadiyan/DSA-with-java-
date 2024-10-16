@@ -6,7 +6,7 @@ public class Main {
         // pattern1(5);
         // pattern3(5);
         //pattern4(5);
-        pattern5(5);
+        pattern7(5);
     }
     static void pattern2(int n){
         for(int rows=1;rows<=n;rows++){
@@ -59,14 +59,31 @@ public class Main {
             System.out.println();
         }
     }
-    static void pattern5(int n){
-        for(int rows=1;rows<=2*n-1;rows++){
+    static void pattern6(int n){
+        for(int rows=0;rows<=2*n;rows++){
             //for every row run col
-            for(int cols=1;cols<=rows;cols++){+
-            System.out.print(cols);
+            int totalcols=rows>n? 2*n -rows:rows;
+            for(int cols=0;cols<totalcols;cols++){
+            System.out.print("*");
             }
             //when one row is printed we need to add a newline
             System.out.println();
         }
     }
+    static void pattern7(int n){
+        for(int rows=0;rows<=2*n;rows++){
+            //for every row run col
+            int totalcols=rows>n? 2*n -rows:rows;
+            int noofSpaces=n-totalcols;
+            for(int s=0;s<noofSpaces;s++){
+                System.out.print(" ");
+            }
+            for(int cols=0;cols<totalcols;cols++){
+            System.out.print("* ");
+            }
+            //when one row is printed we need to add a newline
+            System.out.println();
+        }
+    } +++++++++++++++++++++++++++++++++++++++++++++++++++++
 }
+
