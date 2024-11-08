@@ -11,9 +11,9 @@ public class RemDup {
                 nums[i]=nums[j];
             }
         }
-        System.out.println(i+1);// to print no of original elements(without duplicate)
+        System.out.println(i+1);// to print no of original elements(without duplicates)
         for(int k=0;k<=i;k++){
-            System.out.print(nums[k]+ " ");
+            System.out.print(nums[k]+ " ");//print array
         }
     }
 }
