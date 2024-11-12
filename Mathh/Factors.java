@@ -2,8 +2,6 @@ import java.util.ArrayList;
 
 public class Factors {
     public static void main(String[] args) {
-          
-      
           int  n=20;
           fact(n);
         }
@@ -21,6 +19,9 @@ public class Factors {
                 list.add(n/i);
             }
         }
+        }
+        for (int i = list.size()-1; i >=0; i--) {
+            System.out.print(list.get(i)+ " ");
         }
 
     }
