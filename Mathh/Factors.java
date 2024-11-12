@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Factors {
     public static void main(String[] args) {
           
@@ -8,10 +10,17 @@ public class Factors {
         
     
     static void fact(int n){
-        for(int i=1;i<=n;i++){
+        ArrayList <Integer> list=new ArrayList<>();
+        for(int i=1;i<=Math.sqrt(n);i++){
             if(n%i==0){
-                 System.out.println(i);
+            if(n/i==i){
+                System.out.print(i+ " "); 
             }
+            else{
+                System.out.print(i + " ");
+                list.add(n/i);
+            }
+        }
         }
 
     }
