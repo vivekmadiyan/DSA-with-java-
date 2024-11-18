@@ -1,14 +1,17 @@
 public class RevNum {
     public static void main(String[] args) {
-       int ans=rev(182);
-       ans=ans*10;
-       System.out.println(ans);
-
+     rev1(1234);
+     System.out.println(sum);
     }
-    static int rev(int n){
-        if(n%10==n){
-            return n;
+    static int sum=0;
+    static void rev1(int n){
+        if (n==0){
+            return;
         }
-        return (n%10)+rev(n/10);
+        int rem=n%10;
+        sum=sum*10+rem;
+        rev1(n/10);
     }
+  
 }
+
