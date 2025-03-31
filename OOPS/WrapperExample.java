@@ -1,3 +1,4 @@
+
 public class WrapperExample {
     public static void main(String[] args) {
         // int a =10;
@@ -5,7 +6,7 @@ public class WrapperExample {
         // Integer num=45;
         Integer a=10;
         Integer b=20;
-        // swap(a,b);
+        swap(a,b);
         // System.out.println(a+ " "+b);
 
         A obj;
